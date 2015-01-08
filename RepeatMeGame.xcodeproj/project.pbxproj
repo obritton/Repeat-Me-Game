@@ -1,0 +1,874 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		612148271A5B893300E4C1C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612148261A5B893300E4C1C6 /* AppDelegate.swift */; };
+		612148291A5B893300E4C1C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612148281A5B893300E4C1C6 /* ViewController.swift */; };
+		6121482C1A5B893300E4C1C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6121482A1A5B893300E4C1C6 /* Main.storyboard */; };
+		6121482E1A5B893300E4C1C6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6121482D1A5B893300E4C1C6 /* Images.xcassets */; };
+		612148311A5B893300E4C1C6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6121482F1A5B893300E4C1C6 /* LaunchScreen.xib */; };
+		6121483D1A5B893300E4C1C6 /* RepeatMeGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6121483C1A5B893300E4C1C6 /* RepeatMeGameTests.swift */; };
+		6121484D1A5B897000E4C1C6 /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6121484C1A5B897000E4C1C6 /* WatchKit.framework */; };
+		612148521A5B897000E4C1C6 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612148511A5B897000E4C1C6 /* InterfaceController.swift */; };
+		612148541A5B897000E4C1C6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 612148531A5B897000E4C1C6 /* Images.xcassets */; };
+		612148581A5B897000E4C1C6 /* RepeatMeGame Watch App.app in Resources */ = {isa = PBXBuildFile; fileRef = 612148571A5B897000E4C1C6 /* RepeatMeGame Watch App.app */; };
+		6121485F1A5B897000E4C1C6 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6121485E1A5B897000E4C1C6 /* Interface.storyboard */; };
+		612148611A5B897000E4C1C6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 612148601A5B897000E4C1C6 /* Images.xcassets */; };
+		612148641A5B897000E4C1C6 /* RepeatMeGame WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6121484A1A5B897000E4C1C6 /* RepeatMeGame WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		61CAD5E11A5BBA6B0049DB8B /* LowerLeftGlow0.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5B41A5BBA6B0049DB8B /* LowerLeftGlow0.png */; };
+		61CAD5E21A5BBA6B0049DB8B /* LowerLeftGlow1.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5B51A5BBA6B0049DB8B /* LowerLeftGlow1.png */; };
+		61CAD5E31A5BBA6B0049DB8B /* LowerLeftGlow10.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5B61A5BBA6B0049DB8B /* LowerLeftGlow10.png */; };
+		61CAD5E41A5BBA6B0049DB8B /* LowerLeftGlow2.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5B71A5BBA6B0049DB8B /* LowerLeftGlow2.png */; };
+		61CAD5E51A5BBA6B0049DB8B /* LowerLeftGlow3.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5B81A5BBA6B0049DB8B /* LowerLeftGlow3.png */; };
+		61CAD5E61A5BBA6B0049DB8B /* LowerLeftGlow4.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5B91A5BBA6B0049DB8B /* LowerLeftGlow4.png */; };
+		61CAD5E71A5BBA6B0049DB8B /* LowerLeftGlow5.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5BA1A5BBA6B0049DB8B /* LowerLeftGlow5.png */; };
+		61CAD5E81A5BBA6B0049DB8B /* LowerLeftGlow6.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5BB1A5BBA6B0049DB8B /* LowerLeftGlow6.png */; };
+		61CAD5E91A5BBA6B0049DB8B /* LowerLeftGlow7.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5BC1A5BBA6B0049DB8B /* LowerLeftGlow7.png */; };
+		61CAD5EA1A5BBA6B0049DB8B /* LowerLeftGlow8.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5BD1A5BBA6B0049DB8B /* LowerLeftGlow8.png */; };
+		61CAD5EB1A5BBA6B0049DB8B /* LowerLeftGlow9.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5BE1A5BBA6B0049DB8B /* LowerLeftGlow9.png */; };
+		61CAD5EC1A5BBA6B0049DB8B /* LowerRightGlow0.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5BF1A5BBA6B0049DB8B /* LowerRightGlow0.png */; };
+		61CAD5ED1A5BBA6B0049DB8B /* LowerRightGlow1.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5C01A5BBA6B0049DB8B /* LowerRightGlow1.png */; };
+		61CAD5EE1A5BBA6B0049DB8B /* LowerRightGlow10.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5C11A5BBA6B0049DB8B /* LowerRightGlow10.png */; };
+		61CAD5EF1A5BBA6B0049DB8B /* LowerRightGlow2.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5C21A5BBA6B0049DB8B /* LowerRightGlow2.png */; };
+		61CAD5F01A5BBA6B0049DB8B /* LowerRightGlow3.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5C31A5BBA6B0049DB8B /* LowerRightGlow3.png */; };
+		61CAD5F11A5BBA6B0049DB8B /* LowerRightGlow4.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5C41A5BBA6B0049DB8B /* LowerRightGlow4.png */; };
+		61CAD5F21A5BBA6B0049DB8B /* LowerRightGlow5.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5C51A5BBA6B0049DB8B /* LowerRightGlow5.png */; };
+		61CAD5F31A5BBA6B0049DB8B /* LowerRightGlow6.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5C61A5BBA6B0049DB8B /* LowerRightGlow6.png */; };
+		61CAD5F41A5BBA6B0049DB8B /* LowerRightGlow7.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5C71A5BBA6B0049DB8B /* LowerRightGlow7.png */; };
+		61CAD5F51A5BBA6B0049DB8B /* LowerRightGlow8.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5C81A5BBA6B0049DB8B /* LowerRightGlow8.png */; };
+		61CAD5F61A5BBA6B0049DB8B /* LowerRightGlow9.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5C91A5BBA6B0049DB8B /* LowerRightGlow9.png */; };
+		61CAD5F71A5BBA6B0049DB8B /* GameBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5CA1A5BBA6B0049DB8B /* GameBackground.png */; };
+		61CAD5F81A5BBA6B0049DB8B /* UpperLeftGlow0.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5CB1A5BBA6B0049DB8B /* UpperLeftGlow0.png */; };
+		61CAD5F91A5BBA6B0049DB8B /* UpperLeftGlow1.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5CC1A5BBA6B0049DB8B /* UpperLeftGlow1.png */; };
+		61CAD5FA1A5BBA6B0049DB8B /* UpperLeftGlow10.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5CD1A5BBA6B0049DB8B /* UpperLeftGlow10.png */; };
+		61CAD5FB1A5BBA6B0049DB8B /* UpperLeftGlow2.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5CE1A5BBA6B0049DB8B /* UpperLeftGlow2.png */; };
+		61CAD5FC1A5BBA6B0049DB8B /* UpperLeftGlow3.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5CF1A5BBA6B0049DB8B /* UpperLeftGlow3.png */; };
+		61CAD5FD1A5BBA6B0049DB8B /* UpperLeftGlow4.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5D01A5BBA6B0049DB8B /* UpperLeftGlow4.png */; };
+		61CAD5FE1A5BBA6B0049DB8B /* UpperLeftGlow5.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5D11A5BBA6B0049DB8B /* UpperLeftGlow5.png */; };
+		61CAD5FF1A5BBA6B0049DB8B /* UpperLeftGlow6.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5D21A5BBA6B0049DB8B /* UpperLeftGlow6.png */; };
+		61CAD6001A5BBA6B0049DB8B /* UpperLeftGlow7.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5D31A5BBA6B0049DB8B /* UpperLeftGlow7.png */; };
+		61CAD6011A5BBA6B0049DB8B /* UpperLeftGlow8.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5D41A5BBA6B0049DB8B /* UpperLeftGlow8.png */; };
+		61CAD6021A5BBA6B0049DB8B /* UpperLeftGlow9.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5D51A5BBA6B0049DB8B /* UpperLeftGlow9.png */; };
+		61CAD6031A5BBA6B0049DB8B /* UpperRightGlow0.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5D61A5BBA6B0049DB8B /* UpperRightGlow0.png */; };
+		61CAD6041A5BBA6B0049DB8B /* UpperRightGlow1.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5D71A5BBA6B0049DB8B /* UpperRightGlow1.png */; };
+		61CAD6051A5BBA6B0049DB8B /* UpperRightGlow10.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5D81A5BBA6B0049DB8B /* UpperRightGlow10.png */; };
+		61CAD6061A5BBA6B0049DB8B /* UpperRightGlow2.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5D91A5BBA6B0049DB8B /* UpperRightGlow2.png */; };
+		61CAD6071A5BBA6B0049DB8B /* UpperRightGlow3.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5DA1A5BBA6B0049DB8B /* UpperRightGlow3.png */; };
+		61CAD6081A5BBA6B0049DB8B /* UpperRightGlow4.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5DB1A5BBA6B0049DB8B /* UpperRightGlow4.png */; };
+		61CAD6091A5BBA6B0049DB8B /* UpperRightGlow5.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5DC1A5BBA6B0049DB8B /* UpperRightGlow5.png */; };
+		61CAD60A1A5BBA6B0049DB8B /* UpperRightGlow6.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5DD1A5BBA6B0049DB8B /* UpperRightGlow6.png */; };
+		61CAD60B1A5BBA6B0049DB8B /* UpperRightGlow7.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5DE1A5BBA6B0049DB8B /* UpperRightGlow7.png */; };
+		61CAD60C1A5BBA6B0049DB8B /* UpperRightGlow8.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5DF1A5BBA6B0049DB8B /* UpperRightGlow8.png */; };
+		61CAD60D1A5BBA6B0049DB8B /* UpperRightGlow9.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CAD5E01A5BBA6B0049DB8B /* UpperRightGlow9.png */; };
+		61CAD60F1A5BBEDC0049DB8B /* RepeatMeGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CAD60E1A5BBEDC0049DB8B /* RepeatMeGameController.swift */; };
+		61ECA6381A5D0948001A6B60 /* RepeatMeGameMaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61ECA6371A5D0948001A6B60 /* RepeatMeGameMaster.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		612148371A5B893300E4C1C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 612148191A5B893200E4C1C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 612148201A5B893200E4C1C6;
+			remoteInfo = RepeatMeGame;
+		};
+		612148591A5B897000E4C1C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 612148191A5B893200E4C1C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 612148561A5B897000E4C1C6;
+			remoteInfo = "RepeatMeGame Watch App";
+		};
+		612148621A5B897000E4C1C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 612148191A5B893200E4C1C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 612148491A5B897000E4C1C6;
+			remoteInfo = "RepeatMeGame WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6121486B1A5B897000E4C1C6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				612148641A5B897000E4C1C6 /* RepeatMeGame WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		612148211A5B893200E4C1C6 /* RepeatMeGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepeatMeGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		612148251A5B893300E4C1C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		612148261A5B893300E4C1C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		612148281A5B893300E4C1C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6121482B1A5B893300E4C1C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6121482D1A5B893300E4C1C6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		612148301A5B893300E4C1C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		612148361A5B893300E4C1C6 /* RepeatMeGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepeatMeGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6121483B1A5B893300E4C1C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6121483C1A5B893300E4C1C6 /* RepeatMeGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatMeGameTests.swift; sourceTree = "<group>"; };
+		6121484A1A5B897000E4C1C6 /* RepeatMeGame WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RepeatMeGame WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6121484C1A5B897000E4C1C6 /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
+		612148501A5B897000E4C1C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		612148511A5B897000E4C1C6 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		612148531A5B897000E4C1C6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		612148571A5B897000E4C1C6 /* RepeatMeGame Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RepeatMeGame Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6121485D1A5B897000E4C1C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6121485E1A5B897000E4C1C6 /* Interface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		612148601A5B897000E4C1C6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		61CAD5B41A5BBA6B0049DB8B /* LowerLeftGlow0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LowerLeftGlow0.png; sourceTree = "<group>"; };
+		61CAD5B51A5BBA6B0049DB8B /* LowerLeftGlow1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LowerLeftGlow1.png; sourceTree = "<group>"; };
+		61CAD5B61A5BBA6B0049DB8B /* LowerLeftGlow10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LowerLeftGlow10.png; sourceTree = "<group>"; };
+		61CAD5B71A5BBA6B0049DB8B /* LowerLeftGlow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LowerLeftGlow2.png; sourceTree = "<group>"; };
+		61CAD5B81A5BBA6B0049DB8B /* LowerLeftGlow3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LowerLeftGlow3.png; sourceTree = "<group>"; };
+		61CAD5B91A5BBA6B0049DB8B /* LowerLeftGlow4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LowerLeftGlow4.png; sourceTree = "<group>"; };
+		61CAD5BA1A5BBA6B0049DB8B /* LowerLeftGlow5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LowerLeftGlow5.png; sourceTree = "<group>"; };
+		61CAD5BB1A5BBA6B0049DB8B /* LowerLeftGlow6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LowerLeftGlow6.png; sourceTree = "<group>"; };
+		61CAD5BC1A5BBA6B0049DB8B /* LowerLeftGlow7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LowerLeftGlow7.png; sourceTree = "<group>"; };
+		61CAD5BD1A5BBA6B0049DB8B /* LowerLeftGlow8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LowerLeftGlow8.png; sourceTree = "<group>"; };
+		61CAD5BE1A5BBA6B0049DB8B /* LowerLeftGlow9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LowerLeftGlow9.png; sourceTree = "<group>"; };
+		61CAD5BF1A5BBA6B0049DB8B /* LowerRightGlow0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LowerRightGlow0.png; sourceTree = "<group>"; };
+		61CAD5C01A5BBA6B0049DB8B /* LowerRightGlow1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LowerRightGlow1.png; sourceTree = "<group>"; };
+		61CAD5C11A5BBA6B0049DB8B /* LowerRightGlow10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LowerRightGlow10.png; sourceTree = "<group>"; };
+		61CAD5C21A5BBA6B0049DB8B /* LowerRightGlow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LowerRightGlow2.png; sourceTree = "<group>"; };
+		61CAD5C31A5BBA6B0049DB8B /* LowerRightGlow3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LowerRightGlow3.png; sourceTree = "<group>"; };
+		61CAD5C41A5BBA6B0049DB8B /* LowerRightGlow4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LowerRightGlow4.png; sourceTree = "<group>"; };
+		61CAD5C51A5BBA6B0049DB8B /* LowerRightGlow5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LowerRightGlow5.png; sourceTree = "<group>"; };
+		61CAD5C61A5BBA6B0049DB8B /* LowerRightGlow6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LowerRightGlow6.png; sourceTree = "<group>"; };
+		61CAD5C71A5BBA6B0049DB8B /* LowerRightGlow7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LowerRightGlow7.png; sourceTree = "<group>"; };
+		61CAD5C81A5BBA6B0049DB8B /* LowerRightGlow8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LowerRightGlow8.png; sourceTree = "<group>"; };
+		61CAD5C91A5BBA6B0049DB8B /* LowerRightGlow9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LowerRightGlow9.png; sourceTree = "<group>"; };
+		61CAD5CA1A5BBA6B0049DB8B /* GameBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameBackground.png; sourceTree = "<group>"; };
+		61CAD5CB1A5BBA6B0049DB8B /* UpperLeftGlow0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UpperLeftGlow0.png; sourceTree = "<group>"; };
+		61CAD5CC1A5BBA6B0049DB8B /* UpperLeftGlow1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UpperLeftGlow1.png; sourceTree = "<group>"; };
+		61CAD5CD1A5BBA6B0049DB8B /* UpperLeftGlow10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UpperLeftGlow10.png; sourceTree = "<group>"; };
+		61CAD5CE1A5BBA6B0049DB8B /* UpperLeftGlow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UpperLeftGlow2.png; sourceTree = "<group>"; };
+		61CAD5CF1A5BBA6B0049DB8B /* UpperLeftGlow3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UpperLeftGlow3.png; sourceTree = "<group>"; };
+		61CAD5D01A5BBA6B0049DB8B /* UpperLeftGlow4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UpperLeftGlow4.png; sourceTree = "<group>"; };
+		61CAD5D11A5BBA6B0049DB8B /* UpperLeftGlow5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UpperLeftGlow5.png; sourceTree = "<group>"; };
+		61CAD5D21A5BBA6B0049DB8B /* UpperLeftGlow6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UpperLeftGlow6.png; sourceTree = "<group>"; };
+		61CAD5D31A5BBA6B0049DB8B /* UpperLeftGlow7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UpperLeftGlow7.png; sourceTree = "<group>"; };
+		61CAD5D41A5BBA6B0049DB8B /* UpperLeftGlow8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UpperLeftGlow8.png; sourceTree = "<group>"; };
+		61CAD5D51A5BBA6B0049DB8B /* UpperLeftGlow9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UpperLeftGlow9.png; sourceTree = "<group>"; };
+		61CAD5D61A5BBA6B0049DB8B /* UpperRightGlow0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UpperRightGlow0.png; sourceTree = "<group>"; };
+		61CAD5D71A5BBA6B0049DB8B /* UpperRightGlow1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UpperRightGlow1.png; sourceTree = "<group>"; };
+		61CAD5D81A5BBA6B0049DB8B /* UpperRightGlow10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UpperRightGlow10.png; sourceTree = "<group>"; };
+		61CAD5D91A5BBA6B0049DB8B /* UpperRightGlow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UpperRightGlow2.png; sourceTree = "<group>"; };
+		61CAD5DA1A5BBA6B0049DB8B /* UpperRightGlow3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UpperRightGlow3.png; sourceTree = "<group>"; };
+		61CAD5DB1A5BBA6B0049DB8B /* UpperRightGlow4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UpperRightGlow4.png; sourceTree = "<group>"; };
+		61CAD5DC1A5BBA6B0049DB8B /* UpperRightGlow5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UpperRightGlow5.png; sourceTree = "<group>"; };
+		61CAD5DD1A5BBA6B0049DB8B /* UpperRightGlow6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UpperRightGlow6.png; sourceTree = "<group>"; };
+		61CAD5DE1A5BBA6B0049DB8B /* UpperRightGlow7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UpperRightGlow7.png; sourceTree = "<group>"; };
+		61CAD5DF1A5BBA6B0049DB8B /* UpperRightGlow8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UpperRightGlow8.png; sourceTree = "<group>"; };
+		61CAD5E01A5BBA6B0049DB8B /* UpperRightGlow9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UpperRightGlow9.png; sourceTree = "<group>"; };
+		61CAD60E1A5BBEDC0049DB8B /* RepeatMeGameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatMeGameController.swift; sourceTree = "<group>"; };
+		61ECA6371A5D0948001A6B60 /* RepeatMeGameMaster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatMeGameMaster.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6121481E1A5B893200E4C1C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		612148331A5B893300E4C1C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		612148471A5B897000E4C1C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6121484D1A5B897000E4C1C6 /* WatchKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		612148181A5B893200E4C1C6 = {
+			isa = PBXGroup;
+			children = (
+				612148231A5B893200E4C1C6 /* RepeatMeGame */,
+				612148391A5B893300E4C1C6 /* RepeatMeGameTests */,
+				6121484E1A5B897000E4C1C6 /* RepeatMeGame WatchKit Extension */,
+				6121485B1A5B897000E4C1C6 /* RepeatMeGame Watch App */,
+				6121484B1A5B897000E4C1C6 /* Frameworks */,
+				612148221A5B893200E4C1C6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		612148221A5B893200E4C1C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				612148211A5B893200E4C1C6 /* RepeatMeGame.app */,
+				612148361A5B893300E4C1C6 /* RepeatMeGameTests.xctest */,
+				6121484A1A5B897000E4C1C6 /* RepeatMeGame WatchKit Extension.appex */,
+				612148571A5B897000E4C1C6 /* RepeatMeGame Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		612148231A5B893200E4C1C6 /* RepeatMeGame */ = {
+			isa = PBXGroup;
+			children = (
+				612148261A5B893300E4C1C6 /* AppDelegate.swift */,
+				612148281A5B893300E4C1C6 /* ViewController.swift */,
+				6121482A1A5B893300E4C1C6 /* Main.storyboard */,
+				6121482D1A5B893300E4C1C6 /* Images.xcassets */,
+				6121482F1A5B893300E4C1C6 /* LaunchScreen.xib */,
+				612148241A5B893300E4C1C6 /* Supporting Files */,
+			);
+			path = RepeatMeGame;
+			sourceTree = "<group>";
+		};
+		612148241A5B893300E4C1C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				612148251A5B893300E4C1C6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		612148391A5B893300E4C1C6 /* RepeatMeGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				6121483C1A5B893300E4C1C6 /* RepeatMeGameTests.swift */,
+				6121483A1A5B893300E4C1C6 /* Supporting Files */,
+			);
+			path = RepeatMeGameTests;
+			sourceTree = "<group>";
+		};
+		6121483A1A5B893300E4C1C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6121483B1A5B893300E4C1C6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6121484B1A5B897000E4C1C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6121484C1A5B897000E4C1C6 /* WatchKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6121484E1A5B897000E4C1C6 /* RepeatMeGame WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				612148511A5B897000E4C1C6 /* InterfaceController.swift */,
+				61CAD60E1A5BBEDC0049DB8B /* RepeatMeGameController.swift */,
+				61ECA6371A5D0948001A6B60 /* RepeatMeGameMaster.swift */,
+				612148531A5B897000E4C1C6 /* Images.xcassets */,
+				6121484F1A5B897000E4C1C6 /* Supporting Files */,
+			);
+			path = "RepeatMeGame WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		6121484F1A5B897000E4C1C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				612148501A5B897000E4C1C6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6121485B1A5B897000E4C1C6 /* RepeatMeGame Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				61CAD5B31A5BBA6B0049DB8B /* RMG Images */,
+				6121485E1A5B897000E4C1C6 /* Interface.storyboard */,
+				612148601A5B897000E4C1C6 /* Images.xcassets */,
+				6121485C1A5B897000E4C1C6 /* Supporting Files */,
+			);
+			path = "RepeatMeGame Watch App";
+			sourceTree = "<group>";
+		};
+		6121485C1A5B897000E4C1C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6121485D1A5B897000E4C1C6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		61CAD5B31A5BBA6B0049DB8B /* RMG Images */ = {
+			isa = PBXGroup;
+			children = (
+				61CAD5B41A5BBA6B0049DB8B /* LowerLeftGlow0.png */,
+				61CAD5B51A5BBA6B0049DB8B /* LowerLeftGlow1.png */,
+				61CAD5B61A5BBA6B0049DB8B /* LowerLeftGlow10.png */,
+				61CAD5B71A5BBA6B0049DB8B /* LowerLeftGlow2.png */,
+				61CAD5B81A5BBA6B0049DB8B /* LowerLeftGlow3.png */,
+				61CAD5B91A5BBA6B0049DB8B /* LowerLeftGlow4.png */,
+				61CAD5BA1A5BBA6B0049DB8B /* LowerLeftGlow5.png */,
+				61CAD5BB1A5BBA6B0049DB8B /* LowerLeftGlow6.png */,
+				61CAD5BC1A5BBA6B0049DB8B /* LowerLeftGlow7.png */,
+				61CAD5BD1A5BBA6B0049DB8B /* LowerLeftGlow8.png */,
+				61CAD5BE1A5BBA6B0049DB8B /* LowerLeftGlow9.png */,
+				61CAD5BF1A5BBA6B0049DB8B /* LowerRightGlow0.png */,
+				61CAD5C01A5BBA6B0049DB8B /* LowerRightGlow1.png */,
+				61CAD5C11A5BBA6B0049DB8B /* LowerRightGlow10.png */,
+				61CAD5C21A5BBA6B0049DB8B /* LowerRightGlow2.png */,
+				61CAD5C31A5BBA6B0049DB8B /* LowerRightGlow3.png */,
+				61CAD5C41A5BBA6B0049DB8B /* LowerRightGlow4.png */,
+				61CAD5C51A5BBA6B0049DB8B /* LowerRightGlow5.png */,
+				61CAD5C61A5BBA6B0049DB8B /* LowerRightGlow6.png */,
+				61CAD5C71A5BBA6B0049DB8B /* LowerRightGlow7.png */,
+				61CAD5C81A5BBA6B0049DB8B /* LowerRightGlow8.png */,
+				61CAD5C91A5BBA6B0049DB8B /* LowerRightGlow9.png */,
+				61CAD5CA1A5BBA6B0049DB8B /* GameBackground.png */,
+				61CAD5CB1A5BBA6B0049DB8B /* UpperLeftGlow0.png */,
+				61CAD5CC1A5BBA6B0049DB8B /* UpperLeftGlow1.png */,
+				61CAD5CD1A5BBA6B0049DB8B /* UpperLeftGlow10.png */,
+				61CAD5CE1A5BBA6B0049DB8B /* UpperLeftGlow2.png */,
+				61CAD5CF1A5BBA6B0049DB8B /* UpperLeftGlow3.png */,
+				61CAD5D01A5BBA6B0049DB8B /* UpperLeftGlow4.png */,
+				61CAD5D11A5BBA6B0049DB8B /* UpperLeftGlow5.png */,
+				61CAD5D21A5BBA6B0049DB8B /* UpperLeftGlow6.png */,
+				61CAD5D31A5BBA6B0049DB8B /* UpperLeftGlow7.png */,
+				61CAD5D41A5BBA6B0049DB8B /* UpperLeftGlow8.png */,
+				61CAD5D51A5BBA6B0049DB8B /* UpperLeftGlow9.png */,
+				61CAD5D61A5BBA6B0049DB8B /* UpperRightGlow0.png */,
+				61CAD5D71A5BBA6B0049DB8B /* UpperRightGlow1.png */,
+				61CAD5D81A5BBA6B0049DB8B /* UpperRightGlow10.png */,
+				61CAD5D91A5BBA6B0049DB8B /* UpperRightGlow2.png */,
+				61CAD5DA1A5BBA6B0049DB8B /* UpperRightGlow3.png */,
+				61CAD5DB1A5BBA6B0049DB8B /* UpperRightGlow4.png */,
+				61CAD5DC1A5BBA6B0049DB8B /* UpperRightGlow5.png */,
+				61CAD5DD1A5BBA6B0049DB8B /* UpperRightGlow6.png */,
+				61CAD5DE1A5BBA6B0049DB8B /* UpperRightGlow7.png */,
+				61CAD5DF1A5BBA6B0049DB8B /* UpperRightGlow8.png */,
+				61CAD5E01A5BBA6B0049DB8B /* UpperRightGlow9.png */,
+			);
+			path = "RMG Images";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		612148201A5B893200E4C1C6 /* RepeatMeGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 612148401A5B893300E4C1C6 /* Build configuration list for PBXNativeTarget "RepeatMeGame" */;
+			buildPhases = (
+				6121481D1A5B893200E4C1C6 /* Sources */,
+				6121481E1A5B893200E4C1C6 /* Frameworks */,
+				6121481F1A5B893200E4C1C6 /* Resources */,
+				6121486B1A5B897000E4C1C6 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				612148631A5B897000E4C1C6 /* PBXTargetDependency */,
+			);
+			name = RepeatMeGame;
+			productName = RepeatMeGame;
+			productReference = 612148211A5B893200E4C1C6 /* RepeatMeGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		612148351A5B893300E4C1C6 /* RepeatMeGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 612148431A5B893300E4C1C6 /* Build configuration list for PBXNativeTarget "RepeatMeGameTests" */;
+			buildPhases = (
+				612148321A5B893300E4C1C6 /* Sources */,
+				612148331A5B893300E4C1C6 /* Frameworks */,
+				612148341A5B893300E4C1C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				612148381A5B893300E4C1C6 /* PBXTargetDependency */,
+			);
+			name = RepeatMeGameTests;
+			productName = RepeatMeGameTests;
+			productReference = 612148361A5B893300E4C1C6 /* RepeatMeGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		612148491A5B897000E4C1C6 /* RepeatMeGame WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 612148681A5B897000E4C1C6 /* Build configuration list for PBXNativeTarget "RepeatMeGame WatchKit Extension" */;
+			buildPhases = (
+				612148461A5B897000E4C1C6 /* Sources */,
+				612148471A5B897000E4C1C6 /* Frameworks */,
+				612148481A5B897000E4C1C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6121485A1A5B897000E4C1C6 /* PBXTargetDependency */,
+			);
+			name = "RepeatMeGame WatchKit Extension";
+			productName = "RepeatMeGame WatchKit Extension";
+			productReference = 6121484A1A5B897000E4C1C6 /* RepeatMeGame WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		612148561A5B897000E4C1C6 /* RepeatMeGame Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 612148651A5B897000E4C1C6 /* Build configuration list for PBXNativeTarget "RepeatMeGame Watch App" */;
+			buildPhases = (
+				612148551A5B897000E4C1C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RepeatMeGame Watch App";
+			productName = "RepeatMeGame Watch App";
+			productReference = 612148571A5B897000E4C1C6 /* RepeatMeGame Watch App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		612148191A5B893200E4C1C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Ontario Britton";
+				TargetAttributes = {
+					612148201A5B893200E4C1C6 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					612148351A5B893300E4C1C6 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 612148201A5B893200E4C1C6;
+					};
+					612148491A5B897000E4C1C6 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					612148561A5B897000E4C1C6 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = 6121481C1A5B893200E4C1C6 /* Build configuration list for PBXProject "RepeatMeGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 612148181A5B893200E4C1C6;
+			productRefGroup = 612148221A5B893200E4C1C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				612148201A5B893200E4C1C6 /* RepeatMeGame */,
+				612148351A5B893300E4C1C6 /* RepeatMeGameTests */,
+				612148491A5B897000E4C1C6 /* RepeatMeGame WatchKit Extension */,
+				612148561A5B897000E4C1C6 /* RepeatMeGame Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6121481F1A5B893200E4C1C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6121482C1A5B893300E4C1C6 /* Main.storyboard in Resources */,
+				612148311A5B893300E4C1C6 /* LaunchScreen.xib in Resources */,
+				6121482E1A5B893300E4C1C6 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		612148341A5B893300E4C1C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		612148481A5B897000E4C1C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				612148581A5B897000E4C1C6 /* RepeatMeGame Watch App.app in Resources */,
+				612148541A5B897000E4C1C6 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		612148551A5B897000E4C1C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61CAD60C1A5BBA6B0049DB8B /* UpperRightGlow8.png in Resources */,
+				61CAD5E21A5BBA6B0049DB8B /* LowerLeftGlow1.png in Resources */,
+				61CAD5EF1A5BBA6B0049DB8B /* LowerRightGlow2.png in Resources */,
+				61CAD5E71A5BBA6B0049DB8B /* LowerLeftGlow5.png in Resources */,
+				61CAD6001A5BBA6B0049DB8B /* UpperLeftGlow7.png in Resources */,
+				61CAD5E91A5BBA6B0049DB8B /* LowerLeftGlow7.png in Resources */,
+				61CAD5F61A5BBA6B0049DB8B /* LowerRightGlow9.png in Resources */,
+				61CAD5F01A5BBA6B0049DB8B /* LowerRightGlow3.png in Resources */,
+				61CAD5E41A5BBA6B0049DB8B /* LowerLeftGlow2.png in Resources */,
+				6121485F1A5B897000E4C1C6 /* Interface.storyboard in Resources */,
+				61CAD5EE1A5BBA6B0049DB8B /* LowerRightGlow10.png in Resources */,
+				61CAD6071A5BBA6B0049DB8B /* UpperRightGlow3.png in Resources */,
+				61CAD5F21A5BBA6B0049DB8B /* LowerRightGlow5.png in Resources */,
+				61CAD5FB1A5BBA6B0049DB8B /* UpperLeftGlow2.png in Resources */,
+				61CAD5E61A5BBA6B0049DB8B /* LowerLeftGlow4.png in Resources */,
+				61CAD6081A5BBA6B0049DB8B /* UpperRightGlow4.png in Resources */,
+				61CAD5FD1A5BBA6B0049DB8B /* UpperLeftGlow4.png in Resources */,
+				61CAD5F11A5BBA6B0049DB8B /* LowerRightGlow4.png in Resources */,
+				61CAD5E31A5BBA6B0049DB8B /* LowerLeftGlow10.png in Resources */,
+				61CAD5FE1A5BBA6B0049DB8B /* UpperLeftGlow5.png in Resources */,
+				61CAD60D1A5BBA6B0049DB8B /* UpperRightGlow9.png in Resources */,
+				61CAD5EA1A5BBA6B0049DB8B /* LowerLeftGlow8.png in Resources */,
+				61CAD6011A5BBA6B0049DB8B /* UpperLeftGlow8.png in Resources */,
+				61CAD5E51A5BBA6B0049DB8B /* LowerLeftGlow3.png in Resources */,
+				61CAD5E81A5BBA6B0049DB8B /* LowerLeftGlow6.png in Resources */,
+				61CAD5FA1A5BBA6B0049DB8B /* UpperLeftGlow10.png in Resources */,
+				61CAD60A1A5BBA6B0049DB8B /* UpperRightGlow6.png in Resources */,
+				61CAD6051A5BBA6B0049DB8B /* UpperRightGlow10.png in Resources */,
+				61CAD6031A5BBA6B0049DB8B /* UpperRightGlow0.png in Resources */,
+				61CAD5F81A5BBA6B0049DB8B /* UpperLeftGlow0.png in Resources */,
+				61CAD5F91A5BBA6B0049DB8B /* UpperLeftGlow1.png in Resources */,
+				61CAD6041A5BBA6B0049DB8B /* UpperRightGlow1.png in Resources */,
+				61CAD5E11A5BBA6B0049DB8B /* LowerLeftGlow0.png in Resources */,
+				61CAD5FF1A5BBA6B0049DB8B /* UpperLeftGlow6.png in Resources */,
+				61CAD60B1A5BBA6B0049DB8B /* UpperRightGlow7.png in Resources */,
+				61CAD5F31A5BBA6B0049DB8B /* LowerRightGlow6.png in Resources */,
+				61CAD5F71A5BBA6B0049DB8B /* GameBackground.png in Resources */,
+				61CAD5FC1A5BBA6B0049DB8B /* UpperLeftGlow3.png in Resources */,
+				61CAD6061A5BBA6B0049DB8B /* UpperRightGlow2.png in Resources */,
+				61CAD6091A5BBA6B0049DB8B /* UpperRightGlow5.png in Resources */,
+				61CAD5EB1A5BBA6B0049DB8B /* LowerLeftGlow9.png in Resources */,
+				61CAD5F51A5BBA6B0049DB8B /* LowerRightGlow8.png in Resources */,
+				61CAD5F41A5BBA6B0049DB8B /* LowerRightGlow7.png in Resources */,
+				612148611A5B897000E4C1C6 /* Images.xcassets in Resources */,
+				61CAD5ED1A5BBA6B0049DB8B /* LowerRightGlow1.png in Resources */,
+				61CAD5EC1A5BBA6B0049DB8B /* LowerRightGlow0.png in Resources */,
+				61CAD6021A5BBA6B0049DB8B /* UpperLeftGlow9.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6121481D1A5B893200E4C1C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				612148291A5B893300E4C1C6 /* ViewController.swift in Sources */,
+				612148271A5B893300E4C1C6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		612148321A5B893300E4C1C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6121483D1A5B893300E4C1C6 /* RepeatMeGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		612148461A5B897000E4C1C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61CAD60F1A5BBEDC0049DB8B /* RepeatMeGameController.swift in Sources */,
+				612148521A5B897000E4C1C6 /* InterfaceController.swift in Sources */,
+				61ECA6381A5D0948001A6B60 /* RepeatMeGameMaster.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		612148381A5B893300E4C1C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 612148201A5B893200E4C1C6 /* RepeatMeGame */;
+			targetProxy = 612148371A5B893300E4C1C6 /* PBXContainerItemProxy */;
+		};
+		6121485A1A5B897000E4C1C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 612148561A5B897000E4C1C6 /* RepeatMeGame Watch App */;
+			targetProxy = 612148591A5B897000E4C1C6 /* PBXContainerItemProxy */;
+		};
+		612148631A5B897000E4C1C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 612148491A5B897000E4C1C6 /* RepeatMeGame WatchKit Extension */;
+			targetProxy = 612148621A5B897000E4C1C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6121482A1A5B893300E4C1C6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6121482B1A5B893300E4C1C6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6121482F1A5B893300E4C1C6 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				612148301A5B893300E4C1C6 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6121483E1A5B893300E4C1C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6121483F1A5B893300E4C1C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		612148411A5B893300E4C1C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = RepeatMeGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		612148421A5B893300E4C1C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = RepeatMeGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		612148441A5B893300E4C1C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RepeatMeGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RepeatMeGame.app/RepeatMeGame";
+			};
+			name = Debug;
+		};
+		612148451A5B893300E4C1C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RepeatMeGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RepeatMeGame.app/RepeatMeGame";
+			};
+			name = Release;
+		};
+		612148661A5B897000E4C1C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = RepeatMeGame_WatchKit_Extension;
+				INFOPLIST_FILE = "RepeatMeGame Watch App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		612148671A5B897000E4C1C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				IBSC_MODULE = RepeatMeGame_WatchKit_Extension;
+				INFOPLIST_FILE = "RepeatMeGame Watch App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		612148691A5B897000E4C1C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RepeatMeGame WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6121486A1A5B897000E4C1C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "RepeatMeGame WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6121481C1A5B893200E4C1C6 /* Build configuration list for PBXProject "RepeatMeGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6121483E1A5B893300E4C1C6 /* Debug */,
+				6121483F1A5B893300E4C1C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		612148401A5B893300E4C1C6 /* Build configuration list for PBXNativeTarget "RepeatMeGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				612148411A5B893300E4C1C6 /* Debug */,
+				612148421A5B893300E4C1C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		612148431A5B893300E4C1C6 /* Build configuration list for PBXNativeTarget "RepeatMeGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				612148441A5B893300E4C1C6 /* Debug */,
+				612148451A5B893300E4C1C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		612148651A5B897000E4C1C6 /* Build configuration list for PBXNativeTarget "RepeatMeGame Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				612148661A5B897000E4C1C6 /* Debug */,
+				612148671A5B897000E4C1C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		612148681A5B897000E4C1C6 /* Build configuration list for PBXNativeTarget "RepeatMeGame WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				612148691A5B897000E4C1C6 /* Debug */,
+				6121486A1A5B897000E4C1C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 612148191A5B893200E4C1C6 /* Project object */;
+}

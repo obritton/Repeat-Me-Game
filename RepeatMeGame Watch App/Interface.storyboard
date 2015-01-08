@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="13F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DxK-t9-oCi">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3734"/>
+    </dependencies>
+    <scenes>
+        <!--GameBackground.png-->
+        <scene sceneID="R8o-Ke-WBn">
+            <objects>
+                <controller backgroundImage="GameBackground.png" contentMode="scaleAspectFill" id="DxK-t9-oCi" customClass="InterfaceController" customModule="RepeatMeGame_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" verticalAlignment="center" title="PLAY" id="BNp-wF-BIk">
+                            <connections>
+                                <segue destination="AgC-eL-Hgc" kind="push" id="E3g-VH-teD"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="playButton" destination="BNp-wF-BIk" id="cZz-bJ-a6H"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-11" y="130"/>
+        </scene>
+        <!--Repeat Me Game Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="RepeatMeGameController" customModule="RepeatMeGame_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="0.80000000000000004" alignment="left" verticalAlignment="center" backgroundImage="GameBackground.png" contentMode="scaleAspectFill" spacing="0.0" hasDetent="YES" id="WAy-0h-qFU" userLabel="BG Group">
+                            <items>
+                                <group width="1" height="1" alignment="left" verticalAlignment="center" contentMode="scaleAspectFill" spacing="0.0" hasDetent="YES" id="BPL-V5-zax" userLabel="UpperLeftGlow Group">
+                                    <items>
+                                        <group width="1" height="1" alignment="left" verticalAlignment="center" contentMode="scaleAspectFill" spacing="0.0" hasDetent="YES" id="w54-Gb-bb3" userLabel="UpperRightGlow Group">
+                                            <items>
+                                                <group width="1" height="1" alignment="left" verticalAlignment="center" contentMode="scaleAspectFill" spacing="0.0" hasDetent="YES" id="y3J-pv-QPH" userLabel="LowerLeftGlow Group">
+                                                    <items>
+                                                        <group width="1" height="1" alignment="left" verticalAlignment="center" contentMode="scaleAspectFill" spacing="0.0" hasDetent="YES" id="3gG-0K-bwe" userLabel="LowerRightGlow Group">
+                                                            <items>
+                                                                <group width="0.5" height="1" alignment="left" layout="vertical" spacing="0.0" id="VaC-C9-c61" userLabel="LeftButtons Group">
+                                                                    <items>
+                                                                        <button width="1" height="0.5" alignment="left" id="3pE-OT-dlt" userLabel="UpperLeft">
+                                                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                                            <connections>
+                                                                                <action selector="pressedUpperLeft" destination="AgC-eL-Hgc" id="E4n-VV-JSA"/>
+                                                                            </connections>
+                                                                        </button>
+                                                                        <button width="1" height="0.5" alignment="left" id="iXR-7J-VcF" userLabel="LowerLeft">
+                                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                                            <connections>
+                                                                                <action selector="pressedLowerLeft" destination="AgC-eL-Hgc" id="l9g-vs-2H7"/>
+                                                                            </connections>
+                                                                        </button>
+                                                                    </items>
+                                                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                                                </group>
+                                                                <group width="0.5" height="1" alignment="left" layout="vertical" spacing="0.0" id="RQd-1i-xgG" userLabel="RightButtons Group">
+                                                                    <items>
+                                                                        <button width="1" height="0.5" alignment="left" id="oo6-X2-Twc" userLabel="UpperRight">
+                                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                                            <connections>
+                                                                                <action selector="pressedUpperRight" destination="AgC-eL-Hgc" id="ha7-cK-Ect"/>
+                                                                            </connections>
+                                                                        </button>
+                                                                        <button width="1" height="0.5" alignment="left" id="C1k-qp-log" userLabel="LowerRight">
+                                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                                            <connections>
+                                                                                <action selector="pressedLowerRight" destination="AgC-eL-Hgc" id="DJk-1s-Xuz"/>
+                                                                            </connections>
+                                                                        </button>
+                                                                    </items>
+                                                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                                                </group>
+                                                            </items>
+                                                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                                        </group>
+                                                    </items>
+                                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                                </group>
+                                            </items>
+                                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                        </group>
+                                    </items>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                </group>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="lowerLeftBtn" destination="iXR-7J-VcF" id="elw-wv-nbn"/>
+                        <outlet property="lowerLeftGroup" destination="y3J-pv-QPH" id="6x0-AY-fYt"/>
+                        <outlet property="lowerRightBtn" destination="C1k-qp-log" id="QRB-Zg-HKr"/>
+                        <outlet property="lowerRightGroup" destination="3gG-0K-bwe" id="EDv-qQ-fbU"/>
+                        <outlet property="upperLeftBtn" destination="3pE-OT-dlt" id="lfH-rX-yKK"/>
+                        <outlet property="upperLeftGroup" destination="BPL-V5-zax" id="NTh-G6-tiF"/>
+                        <outlet property="upperRightBtn" destination="oo6-X2-Twc" id="bYN-c6-MxS"/>
+                        <outlet property="upperRightGroup" destination="w54-Gb-bb3" id="ela-eG-1VH"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="238" y="130"/>
+        </scene>
+    </scenes>
+</document>
